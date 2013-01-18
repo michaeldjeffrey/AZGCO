@@ -1,8 +1,12 @@
 from flask import (Flask,
 	render_template, request)
-#TODO - import pymongo
-#TODO - name pymongo database (cars?)
+
+from pymongo import Connection
+db = Connection().test
+
+
 app = Flask(__name__)
+
 
 @app.route("/")
 def index():
@@ -18,12 +22,12 @@ def result():
 	#TODO - Insert make and model into pymongo db
 	make = request.form['make']
 	model = request.form['model']
-	return "You drive a %s %s?" % (make, model)
+	db.cars.insert({'make': make, 'model': model})
+	return "You drive a %s %s? Well I hope so becaues now its in the database" % (make, model)
 
 @app.route("/result/")
 def showdb():
-	#TODO - show results in pymongo DB
-
+	return render_template('showCars.html', cars = db.cars.find())
 
 
 if __name__ == '__main__':
