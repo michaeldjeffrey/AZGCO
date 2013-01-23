@@ -1,7 +1,15 @@
-<div>A {{make}} {{model}} has been added to this list</div>
+{% extends "index.html" %}
+{% block content %}
+	<div>A {{make}} {{model}} has been added to this list</div>
 
-<ul>
-	{% for car in cars %}
-		<li>{{car['make']}} {{car['model']}}</li>
-	{% endfor%}
-</ul>
+	<ul>
+		{% for car in cars %}
+			<li>{{car['make']}} {{car['model']}}</li>
+		{% endfor%}
+	</ul>
+	<ul>
+		{% for user in users %}
+			<li>{{ user['firstName'] }}</li>
+		{% endfor %}
+	</ul>
+{% endblock %}
