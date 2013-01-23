@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"if",
+				"ifmain	if __name__ == '__main__'"
+			],
+			[
 				"mod",
 				"models"
 			],
@@ -26,10 +30,6 @@
 			[
 				"find",
 				"findOne"
-			],
-			[
-				"index",
-				"index2"
 			],
 			[
 				"for",
@@ -203,23 +203,47 @@
 			"file": "hello.py",
 			"settings":
 			{
-				"buffer_size": 299,
+				"buffer_size": 780,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "templates/hello.html",
+			"file": "templates/showCars.html",
 			"settings":
 			{
-				"buffer_size": 4572,
+				"buffer_size": 90,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "static/js/main.js",
+			"file": "/Users/Hermes/python/flasky/templates/users.html",
 			"settings":
 			{
-				"buffer_size": 582,
+				"buffer_size": 171,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/Hermes/python/flasky/app.py",
+			"settings":
+			{
+				"buffer_size": 784,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "flask1.sublime-project",
+			"settings":
+			{
+				"buffer_size": 71,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "flask1.sublime-workspace",
+			"settings":
+			{
+				"buffer_size": 9024,
 				"line_ending": "Unix"
 			}
 		}
@@ -227,9 +251,61 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 225.0,
+		"height": 181.0,
 		"selected_items":
 		[
+			[
+				"rou",
+				"Snippet: newRoute"
+			],
+			[
+				"route",
+				"Snippet: newRoute"
+			],
+			[
+				"newro",
+				"Snippet: newRoute"
+			],
+			[
+				"new",
+				"Snippet: New Class"
+			],
+			[
+				"mag",
+				"Snippet: __magic__"
+			],
+			[
+				"magi",
+				"Snippet: __magic__"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"htmlji",
+				"Set Syntax: HTML (Jinja Templates)"
+			],
+			[
+				"htmljin",
+				"Set Syntax: HTML (Jinja Templates)"
+			],
+			[
+				"html ji",
+				"Set Syntax: HTML (Jinja Templates)"
+			],
+			[
+				"jinj",
+				"Set Syntax: HTML (Jinja Templates)"
+			],
+			[
+				"jin",
+				"Set Syntax: HTML (Jinja Templates)"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
 			[
 				"html",
 				"Set Syntax: HTML"
@@ -239,19 +315,11 @@
 				"Package Control: Enable Package"
 			],
 			[
-				"install",
-				"Package Control: Install Package"
-			],
-			[
 				"Package Control: ",
 				"Package Control: Disable Package"
 			],
 			[
 				"instal",
-				"Package Control: Install Package"
-			],
-			[
-				"insta",
 				"Package Control: Install Package"
 			],
 			[
@@ -283,7 +351,7 @@
 				"Set Syntax: Jade"
 			]
 		],
-		"width": 579.0
+		"width": 378.0
 	},
 	"console":
 	{
@@ -300,9 +368,19 @@
 	},
 	"file_history":
 	[
+		"/Users/Hermes/Library/Application Support/Sublime Text 2/Packages/User/newRoute.sublime-snippet",
+		"/Users/Hermes/python/flask1/templates/showCars.html",
+		"/Users/Hermes/Library/Application Support/Sublime Text 2/Packages/PHP/class-{-}.sublime-snippet",
+		"/Users/Hermes/python/flasky/templates/page.html",
+		"/Users/Hermes/python/flasky/templates/index.html",
+		"/Users/Hermes/python/flasky/templates/sidebar.html",
+		"/Users/Hermes/python/flasky/app.py",
+		"/Users/Hermes/python/flasky/templates/users.html",
+		"/Users/Hermes/python/flask1/static/js/main.js",
+		"/Users/Hermes/python/flask1/templates/hello.html",
+		"/Users/Hermes/python/flask1/hello.py",
 		"/Users/Hermes/python/flask1/.gitignore",
 		"/Users/Hermes/python/flask1/static/js/javascript.js",
-		"/Users/Hermes/python/flask1/static/js/main.js",
 		"/Users/Hermes/Dropbox/Current Quarter/Integrated Info/AZGCO/views/index.jade",
 		"/Users/Hermes/Dropbox/Current Quarter/Integrated Info/AZGCO/views/layout.jade",
 		"/Users/Hermes/development/workout-tracker/public/json/transactions.json",
@@ -371,6 +449,15 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			" \\n /n",
+			"\\n /n",
+			"</tabTrigger>",
+			"<tabTrigger>",
+			"Contact",
+			"content",
+			"block",
+			"#T",
+			"self.value",
 			"select",
 			"div",
 			"cars",
@@ -489,16 +576,7 @@
 			"span",
 			"animate",
 			"Searching",
-			"animate",
-			"getMilliSeconds",
-			"getMilliseconds",
-			"bluebox",
-			"],",
-			" \"",
-			"newLine",
-			"drawLine",
-			"linePoints",
-			"255"
+			"animate"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -517,7 +595,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -525,15 +603,94 @@
 					"file": "hello.py",
 					"settings":
 					{
-						"buffer_size": 299,
+						"buffer_size": 780,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								210,
-								210
+								729,
+								729
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 101.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "templates/showCars.html",
+					"settings":
+					{
+						"buffer_size": 90,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/Hermes/python/flasky/templates/users.html",
+					"settings":
+					{
+						"buffer_size": 171,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/Hermes/python/flasky/app.py",
+					"settings":
+					{
+						"buffer_size": 784,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -547,50 +704,50 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "templates/hello.html",
+					"buffer": 4,
+					"file": "flask1.sublime-project",
 					"settings":
 					{
-						"buffer_size": 4572,
+						"buffer_size": 71,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2746,
-								2746
+								65,
+								65
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1209.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "static/js/main.js",
+					"buffer": 5,
+					"file": "flask1.sublime-workspace",
 					"settings":
 					{
-						"buffer_size": 582,
+						"buffer_size": 9024,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								29,
-								29
+								73,
+								73
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -685,7 +842,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 220.0,
 	"status_bar_visible": true
 }
