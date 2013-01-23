@@ -19,15 +19,19 @@ def hello(name=None):
 
 @app.route("/result", methods=['POST', 'GET'])
 def result():
-	#TODO - Insert make and model into pymongo db
-	make = request.form['make']
-	model = request.form['model']
-	db.cars.insert({'make': make, 'model': model})
-	return "You drive a %s %s? Well I hope so becaues now its in the database" % (make, model)
+	if request.method == 'POST':
+		#TODO - Insert make and model into pymongo db
+		make = request.form['make']
+		model = request.form['model']
+		db.cars.insert({'make': make, 'model': model})
+		return "You drive a %s %s? Well I hope so becaues now its in the database" % (make, model)
+	else:
+		return showdb()
 
 @app.route("/result/")
 def showdb():
 	return render_template('showCars.html', cars = db.cars.find())
+
 
 
 if __name__ == '__main__':
