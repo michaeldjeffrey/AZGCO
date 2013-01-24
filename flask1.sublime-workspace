@@ -32,6 +32,10 @@
 				"findOne"
 			],
 			[
+				"index",
+				"index2"
+			],
+			[
 				"for",
 				"for	for (…) {…}"
 			],
@@ -203,7 +207,15 @@
 			"file": "hello.py",
 			"settings":
 			{
-				"buffer_size": 780,
+				"buffer_size": 1387,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "static/css/index.css",
+			"settings":
+			{
+				"buffer_size": 1548,
 				"line_ending": "Unix"
 			}
 		},
@@ -211,7 +223,7 @@
 			"file": "templates/showCars.html",
 			"settings":
 			{
-				"buffer_size": 90,
+				"buffer_size": 309,
 				"line_ending": "Unix"
 			}
 		},
@@ -232,18 +244,50 @@
 			}
 		},
 		{
-			"file": "flask1.sublime-project",
+			"file": "/Users/Hermes/python/flasky/templates/page.html",
 			"settings":
 			{
-				"buffer_size": 71,
+				"buffer_size": 205,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "flask1.sublime-workspace",
+			"file": "templates/index.html",
 			"settings":
 			{
-				"buffer_size": 9024,
+				"buffer_size": 440,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/aside.html",
+			"settings":
+			{
+				"buffer_size": 607,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/nav.html",
+			"settings":
+			{
+				"buffer_size": 225,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/users.html",
+			"settings":
+			{
+				"buffer_size": 173,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/hello.html",
+			"settings":
+			{
+				"buffer_size": 4599,
 				"line_ending": "Unix"
 			}
 		}
@@ -251,9 +295,25 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 181.0,
+		"height": 71.0,
 		"selected_items":
 		[
+			[
+				"jinja",
+				"Set Syntax: HTML (Jinja Templates)"
+			],
+			[
+				"ht jin",
+				"Set Syntax: HTML (Jinja Templates)"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"htm jin",
+				"Set Syntax: HTML (Jinja Templates)"
+			],
 			[
 				"rou",
 				"Snippet: newRoute"
@@ -303,10 +363,6 @@
 				"Set Syntax: HTML (Jinja Templates)"
 			],
 			[
-				"install",
-				"Package Control: Install Package"
-			],
-			[
 				"html",
 				"Set Syntax: HTML"
 			],
@@ -351,7 +407,7 @@
 				"Set Syntax: Jade"
 			]
 		],
-		"width": 378.0
+		"width": 365.0
 	},
 	"console":
 	{
@@ -368,6 +424,9 @@
 	},
 	"file_history":
 	[
+		"/Users/Hermes/python/flask1/static/js/main.js",
+		"/Users/Hermes/python/flask1/flask1.sublime-workspace",
+		"/Users/Hermes/python/flask1/flask1.sublime-project",
 		"/Users/Hermes/Library/Application Support/Sublime Text 2/Packages/User/newRoute.sublime-snippet",
 		"/Users/Hermes/python/flask1/templates/showCars.html",
 		"/Users/Hermes/Library/Application Support/Sublime Text 2/Packages/PHP/class-{-}.sublime-snippet",
@@ -376,7 +435,6 @@
 		"/Users/Hermes/python/flasky/templates/sidebar.html",
 		"/Users/Hermes/python/flasky/app.py",
 		"/Users/Hermes/python/flasky/templates/users.html",
-		"/Users/Hermes/python/flask1/static/js/main.js",
 		"/Users/Hermes/python/flask1/templates/hello.html",
 		"/Users/Hermes/python/flask1/hello.py",
 		"/Users/Hermes/python/flask1/.gitignore",
@@ -449,6 +507,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"being",
 			" \\n /n",
 			"\\n /n",
 			"</tabTrigger>",
@@ -575,8 +634,7 @@
 			"text",
 			"span",
 			"animate",
-			"Searching",
-			"animate"
+			"Searching"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -603,15 +661,15 @@
 					"file": "hello.py",
 					"settings":
 					{
-						"buffer_size": 780,
+						"buffer_size": 1387,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								729,
-								729
+								1062,
+								1062
 							]
 						],
 						"settings":
@@ -620,30 +678,58 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 101.0,
+						"translation.y": 228.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "templates/showCars.html",
+					"file": "static/css/index.css",
 					"settings":
 					{
-						"buffer_size": 90,
+						"buffer_size": 1548,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1212,
+								1212
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1680.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "templates/showCars.html",
+					"settings":
+					{
+						"buffer_size": 309,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								294,
+								294
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jinja2/Syntaxes/HTML (Jinja Templates).tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -652,7 +738,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "/Users/Hermes/python/flasky/templates/users.html",
 					"settings":
 					{
@@ -678,7 +764,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "/Users/Hermes/python/flasky/app.py",
 					"settings":
 					{
@@ -704,24 +790,24 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "flask1.sublime-project",
+					"buffer": 5,
+					"file": "/Users/Hermes/python/flasky/templates/page.html",
 					"settings":
 					{
-						"buffer_size": 71,
+						"buffer_size": 205,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								65,
-								65
+								162,
+								188
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -730,25 +816,140 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "flask1.sublime-workspace",
+					"buffer": 6,
+					"file": "templates/index.html",
 					"settings":
 					{
-						"buffer_size": 9024,
+						"buffer_size": 440,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								73,
-								73
+								411,
+								411
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"auto_name": "",
+							"syntax": "Packages/Jinja2/Syntaxes/HTML (Jinja Templates).tmLanguage",
 							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 7,
+					"file": "templates/aside.html",
+					"settings":
+					{
+						"buffer_size": 607,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								566,
+								566
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "templates/nav.html",
+					"settings":
+					{
+						"buffer_size": 225,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								225,
+								225
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "templates/users.html",
+					"settings":
+					{
+						"buffer_size": 173,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								136,
+								136
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jinja2/Syntaxes/HTML (Jinja Templates).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "templates/hello.html",
+					"settings":
+					{
+						"buffer_size": 4599,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -776,11 +977,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.603672960069,
 			1.0
 		],
 		"rows":
@@ -800,6 +1008,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"hello",
+				"templates/hello.html"
+			],
 			[
 				"inde",
 				"views/index.jade"
