@@ -15,7 +15,15 @@ app.secret_key = 'some_secret'
 
 @app.route("/")
 def index():
-	return "Hello Michael Jeffrey"
+	count = 0
+	resp = make_response(render_template('index.html', carsAmount = 10))
+	if 'number_of_cars' in request.cookies:
+		count = db.cars.count()
+		resp.set_cookie('number_of_cars', count)
+	else:
+		count = request.cookies.get('number_of_cars')
+	return resp
+
 
 @app.route("/hello/")
 @app.route("/hello/<name>")
@@ -41,6 +49,10 @@ def showdb():
 	model = request.cookies.get('model')
 	return render_template('showCars.html',make=make, model=model, cars = db.cars.find())
 
+@app.route('/users')
+def name():
+	return render_template('users.html', users=db.people.find())
+			
 
 
 if __name__ == '__main__':

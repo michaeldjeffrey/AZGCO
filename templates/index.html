@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="/static/css/index.css">
+	</head>
+	<body>
+		<header>
+			{% include 'nav.html' %}
+		</header>
+		<div id='container'>
+			{% include 'aside.html' %}
+			<h1>Home</h1>
+			<p>This is the homepage</p>
+			{% block content %}
+				content block
+			{% endblock %}
+		</div>
+		<footer>
+			Michael Jeffrey
+		</footer>
+	</body>
+</html>
