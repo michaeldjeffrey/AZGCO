@@ -12,18 +12,11 @@ db = Connection().test
 app = Flask(__name__)
 app.secret_key = 'some_secret'
 
+carsAmount = db.cars.count()
 
 @app.route("/")
 def index():
-	count = 0
-	resp = make_response(render_template('index.html', carsAmount = 10))
-	if 'number_of_cars' in request.cookies:
-		count = db.cars.count()
-		resp.set_cookie('number_of_cars', count)
-	else:
-		count = request.cookies.get('number_of_cars')
-	return resp
-
+	return render_template('index.html', carsAmount=carsAmount)
 
 @app.route("/hello/")
 @app.route("/hello/<name>")
@@ -36,7 +29,7 @@ def result():
 	if request.method == 'POST':
 		make = request.form['make']
 		model = request.form['model']
-		resp = make_response(render_template('showCars.html', make=make, model=model, cars=db.cars.find()))
+		resp = make_response(render_template('showCars.html', carsAmount=carsAmount, make=make, model=model, cars=db.cars.find()))
 		resp.set_cookie('make', make)
 		resp.set_cookie('model', model)
 		db.cars.insert({'make': make, 'model': model})
@@ -47,11 +40,11 @@ def result():
 def showdb():
 	make = request.cookies.get('make')
 	model = request.cookies.get('model')
-	return render_template('showCars.html',make=make, model=model, cars = db.cars.find())
+	return render_template('showCars.html', make=make, model=model, cars = db.cars.find())
 
 @app.route('/users')
 def name():
-	return render_template('users.html', users=db.people.find())
+	return render_template('users.html', carsAmount=carsAmount, users=db.people.find())
 			
 
 
