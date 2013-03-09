@@ -1,24 +1,257 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title></title>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="/static/css/index.css">
-	</head>
-	<body>
-		<header>
-			{% include 'nav.html' %}
-		</header>
-		<div id='container'>
-			{% include 'aside.html' %}
-			<h1>Home</h1>
-			<p>This is the homepage</p>
-			{% block content %}
-				content block
-			{% endblock %}
+{% extends 'layout.html' %}
+{% block content %}
+	<form method='POST' action='/scheduleAppointment'>
+
+<!--
+=================================================================
+		MAIN BODY
+=================================================================
+-->
+<div class='row'>
+	<div class='eight columns'>
+		<fieldset>
+			<legend>Get a Quote</legend>
+<!--
+===============================================
+		BODY LEFT
+===============================================
+-->
+<div class='row'>
+	<div class='twelve columns'>
+		<div class='panel radius'>
+			<div class='row'>
+				<div class='twelve columns'>
+					<label><h4>Car Make</h4></label>
+					<select name='make' id='make' class='twelve'>
+						<option>Select Make</option>
+					</select>
+				</div>
+			</div>
+			<div class='row'>
+				<div class='twelve columns'>
+					<label><h4>Car Model</h4></label>
+					<select name='model' id='model' class='twelve'>
+						<option>Select Model</option>
+					</select>
+				</div>
+				<div class='twelve columns'>
+					<label><h4>Year</h4></label>
+					<input type='text' name='year' id='year' class='twelve' placeholder='Year'/>
+				</div>
+			</div>
 		</div>
-		<footer>
-			Michael Jeffrey
-		</footer>
-	</body>
-</html>
+		<div class='row'>
+			<div class='eight columns'>
+				<a class='large button right' id='btnQuote'>See Your Quote</a>
+			</div>
+		</div>
+	</div>
+</div>
+</fieldset>
+</div>
+<!--
+===============================================
+		BODY RIGHT
+===============================================
+-->
+<div class='four columns'>
+	<br/>
+	<br/>
+	<br/>
+	<div class='row'>
+		<div class='twelve columns text-center'>
+			<div class='panel radius'>
+				<div class='row'>
+					<div class='twelve columns'>
+						<h3>This is where you quote could be!</h3>
+					</div>
+					<div class='twelve columns'>
+						<h4>$<span id='quoteDisplay'><code>HERE</code></span></h4>
+						<input type='hidden' name='quote' id='quoteHidden'/>
+					</div>
+					<div class='twelve columns'>
+						<br>
+						<a href="#" data-reveal-id="warningModal" id='scheduleAppointment' class="large button">Schedule</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<!--
+=================================================================
+		MODALS
+=================================================================
+-->
+<div id='warningModal' class='reveal-modal' data-closeOnBackgroundClick='false'>
+	<div class='row'>
+		<div class='twelve columns centered'>
+			<h2>We need...</h2>
+			<p>Some more information about you if that's alright.</p>
+			<div class='row'>
+				<div class='twelve columns'>
+					<a href='#' class='button secondary close-reveal-modal'>No Thanks</a>
+					<a href='#' class='button success' data-reveal-id='initInfo'>Awesome Let's Go</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a href='#' class='close-reveal-modal'>x</a>
+</div>
+<!--
+=================================================================
+-->
+<div id='initInfo' class='reveal-modal'>
+	<div class='row'>
+		<div class='panel'>
+			<label><h3>Full Name</h3></label>
+			<input type='text' name='name' placeholder='Firstname Lastname'/>
+			<label><h3>Email</h3></label>
+			<input type='text' name='email' placeholder='Email' />
+			<label><h3>Phone</h3></label>
+			<input type='text' name='phone' placeholder='(480)-555-1234' />
+		</div>
+		<a href='#' class='button secondary close-reveal-modal'>No Thanks</a>
+		<a href='#' class='button success' data-reveal-id='serviceInfo'>Awesome Let's Go</a>
+	</div>
+	<a class="close-reveal-modal">×</a>
+	<div class="secondary progress twelve"><span style='width: 25%' class="meter"></span></div>
+</div>
+<!--
+=================================================================
+-->
+<div id='serviceInfo' class='reveal-modal'>
+	<div class='row'>
+		<div class='panel'>
+			<h3>Service Type</h3>
+			<label for='inshop'>
+				<input type='radio' name='serviceType' id='inshop' value='inshop'/>
+				In Shop
+			</label>
+			<label for='mobileLocation'>
+				<input type='radio' name='serviceType' id='mobileLocation' value='mobileLocation'/>
+				Mobile
+			</label>
+			<hr/>
+			<label><h4>Where?</h4></label>
+			<input type='text' name='location' placeholder='Address'/>
+		</div>
+		<a href='#' class='button secondary' data-reveal-id='initInfo'>back</a>
+		<a href='#' class='button success' data-reveal-id='finalInfo'>Continue</a>
+	</div>
+	<a href='#' class='close-reveal-modal'>x</a>
+	<div class="secondary progress twelve"><span style='width: 50%' class="meter"></span></div>
+</div>
+<!--
+=================================================================
+-->
+<div id='finalInfo' class='reveal-modal'>
+	<div class='row'>
+		<div class='panel'>
+			<h3>Preferred Method of Contact</h3>
+			<label for='phoneContact'>
+				<input type='radio' name='contactMethod' id='phoneContact' value='phoneContact'/>
+				by Phone
+			</label>
+			<label for='emailContat'>
+				<input type='radio' name='contactMethod' id='emailContact' value='emailContact'/>
+				by Email
+			</label>
+			<h3>Time of Appointment</h3>
+			<label for='morning'>
+				<input type='radio' name='appointmentTime' id='morning' value='morning'/>
+				Monrning: 9am - noon
+			</label>
+			<label for='afternoon'>
+				<input type='radio' name='appointmentTime' id='afternoon' value='afternoon'/>
+				Afternoon: noon - 5pm
+			</label>
+		</div>
+		<a href='#' class='button secondary' data-reveal-id='serviceInfo'>back</a>
+		<a href='#' class='button success' data-reveal-id='finalCheckInfo' id='finalCheck'>Continue</a>
+	</div>
+	<a href='#' class='close-reveal-modal'>x</a>
+	<div class="secondary progress twelve"><span style='width: 75%' class="meter"></span></div>
+</div>
+<!--
+=================================================================
+-->
+<div id='finalCheckInfo' class='reveal-modal large'>
+	<div class='row'>
+		<div class='twelve columns'>
+			<div class='panel'>
+				<div class='row'>
+					<div class='six columns'>
+						<table class='twelve'>
+							<tr>
+								<td>Make:</td>
+								<td id='dbCheckMake'>Honda</td>
+							</tr>
+							<tr>
+								<td>Model:</td>
+								<td id='dbCheckModel'>Accord</td>
+							</tr>
+							<tr>
+								<td>Year:</td>
+								<td id='dbCheckYear'>2007</td>
+							</tr>
+						</table>
+						<hr/>
+						<a data-reveal-id='serviceInfo'>
+							<table class='twelve'>
+								<tr>
+									<td>Service Type:</td>
+									<td id='dbCheckServiceType'>Mobile</td>
+								</tr>
+								<tr>
+									<td>Location:</td>
+									<td id='dbCheckLocation'>18474 south nowhere</td>
+								</tr>
+							</table>
+						</a>
+					</div>
+					<div class='six columns'>
+						<a data-reveal-id='initInfo'>
+							<table class='twelve'>
+								<tr>
+									<td>Name:</td>
+									<td id='dbCheckName'>Michael Jeffrey</td>
+								</tr>
+								<tr>
+									<td>Email:</td>
+									<td id='dbCheckEmail'>migpok35@gmail.com</td>
+								</tr>
+								<tr>
+									<td>Phone:</td>
+									<td id='dbCheckPhone'>(480)-209-5102</td>
+								</tr>
+							</table>
+						</a>
+						<hr/>
+						<a data-reveal-id='finalInfo'>
+							<table class='twelve'>
+								<tr>
+									<td>Method of Contact:</td>
+									<td id='dbCheckContactMethod'>Phone</td>
+								</tr>
+								<tr>
+									<td>Appointment Time:</td>
+									<td id='dbCheckAppointmentTime'>Morning: 9am - noon</td>
+								</tr>
+							</table>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class='row'>
+		<div class='twelve columns text-center'>
+			<input type='submit' class='button success large' value='submit'/>
+		</div>
+	</div>
+</div>
+</form>
+{% endblock %}
