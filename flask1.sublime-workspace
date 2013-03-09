@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"get",
+				"get	Get Elements"
+			],
+			[
+				"schedu",
+				"scheduleAppointmentAvailable"
+			],
+			[
+				"serv",
+				"serviceLocation"
+			],
+			[
+				"ty",
+				"type"
+			],
+			[
 				"if",
 				"ifmain	if __name__ == '__main__'"
 			],
@@ -14,10 +30,6 @@
 			[
 				"opt",
 				"option	Tag"
-			],
-			[
-				"get",
-				"getJSON"
 			],
 			[
 				"tran",
@@ -204,10 +216,42 @@
 	"buffers":
 	[
 		{
+			"file": "static/js/main.js",
+			"settings":
+			{
+				"buffer_size": 2460,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/admin.html",
+			"settings":
+			{
+				"buffer_size": 7216,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "hello.py",
 			"settings":
 			{
-				"buffer_size": 1387,
+				"buffer_size": 4259,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/jobs.html",
+			"settings":
+			{
+				"buffer_size": 2491,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/layout.html",
+			"settings":
+			{
+				"buffer_size": 1075,
 				"line_ending": "Unix"
 			}
 		}
@@ -215,9 +259,41 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 71.0,
+		"height": 49.0,
 		"selected_items":
 		[
+			[
+				"htmji",
+				"Set Syntax: HTML (Jinja Templates)"
+			],
+			[
+				"htmlj",
+				"Set Syntax: HTML (Jinja Templates)"
+			],
+			[
+				"jinj",
+				"Set Syntax: HTML (Jinja Templates)"
+			],
+			[
+				"html ji",
+				"Set Syntax: HTML (Jinja Templates)"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"hj",
+				"Set Syntax: HTML (Jinja Templates)"
+			],
+			[
+				"html jin",
+				"Set Syntax: HTML (Jinja Templates)"
+			],
 			[
 				"jinja",
 				"Set Syntax: HTML (Jinja Templates)"
@@ -225,10 +301,6 @@
 			[
 				"ht jin",
 				"Set Syntax: HTML (Jinja Templates)"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
 			],
 			[
 				"htm jin",
@@ -271,14 +343,6 @@
 				"Set Syntax: HTML (Jinja Templates)"
 			],
 			[
-				"html ji",
-				"Set Syntax: HTML (Jinja Templates)"
-			],
-			[
-				"jinj",
-				"Set Syntax: HTML (Jinja Templates)"
-			],
-			[
 				"jin",
 				"Set Syntax: HTML (Jinja Templates)"
 			],
@@ -293,10 +357,6 @@
 			[
 				"Package Control: ",
 				"Package Control: Disable Package"
-			],
-			[
-				"instal",
-				"Package Control: Install Package"
 			],
 			[
 				"indent",
@@ -327,7 +387,7 @@
 				"Set Syntax: Jade"
 			]
 		],
-		"width": 365.0
+		"width": 579.0
 	},
 	"console":
 	{
@@ -344,19 +404,34 @@
 	},
 	"file_history":
 	[
-		"/Users/Hermes/node/workout-tracker/app.js",
-		"/Users/Hermes/python/flask1/templates/hello.html",
-		"/Users/Hermes/python/flask1/templates/nav.html",
-		"/Users/Hermes/python/flask1/templates/aside.html",
+		"/Users/Hermes/python/flask1/hello.py",
+		"/Users/Hermes/python/flask1/static/css/foundation.css",
+		"/Users/Hermes/python/flask1/templates/layout.html",
 		"/Users/Hermes/python/flask1/templates/index.html",
+		"/Users/Hermes/python/flask1/templates/thankYou.html",
+		"/Users/Hermes/python/flask1/templates/showCars.html",
+		"/Users/Hermes/python/flask1/static/css/index.css",
+		"/Users/Hermes/python/flask1/static/chosen/chosen.css",
+		"/Users/Hermes/python/flask1/static/css/slider.css",
+		"/Users/Hermes/Localhost/foundation/test.html",
+		"/Users/Hermes/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/Hermes/python/flask1/static/js/parsley.js",
+		"/Users/Hermes/python/flask1/static/chosen/chosen.js",
+		"/Users/Hermes/python/flask1/form.html",
+		"/Users/Hermes/python/flask1/templates/middle.html",
+		"/Users/Hermes/python/flask1/templates/aside.html",
+		"/Users/Hermes/python/flask1/static/js/libs.js",
+		"/Users/Hermes/python/flask1/templates/hello.html",
+		"/Users/Hermes/python/flask1/static/js/chosen.js",
+		"/Users/Hermes/python/flask1/static/css/chosen.css",
+		"/Users/Hermes/python/flask1/static/js/untitled",
+		"/Users/Hermes/node/workout-tracker/app.js",
+		"/Users/Hermes/python/flask1/templates/nav.html",
 		"/Users/Hermes/python/flasky/templates/page.html",
 		"/Users/Hermes/python/flask1/static/js/main.js",
 		"/Users/Hermes/python/flask1/templates/users.html",
-		"/Users/Hermes/python/flask1/hello.py",
 		"/Users/Hermes/python/flasky/app.py",
 		"/Users/Hermes/python/flasky/templates/users.html",
-		"/Users/Hermes/python/flask1/templates/showCars.html",
-		"/Users/Hermes/python/flask1/static/css/index.css",
 		"/Users/Hermes/python/flask1/flask1.sublime-workspace",
 		"/Users/Hermes/python/flask1/flask1.sublime-project",
 		"/Users/Hermes/Library/Application Support/Sublime Text 2/Packages/User/newRoute.sublime-snippet",
@@ -424,6 +499,7 @@
 		"height": 0.0,
 		"where_history":
 		[
+			"",
 			"*.js",
 			""
 		]
@@ -433,6 +509,111 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"a",
+			"currentOpenField",
+			"\"_id\" :",
+			"'status':'Pending'",
+			"town",
+			"buttonHiddenInfo",
+			"afternoon",
+			"email",
+			"4809886841",
+			"migpok35",
+			"AutoShop",
+			"Mobile",
+			"2010",
+			"Creek",
+			"Michael",
+			"appointment",
+			"2007",
+			"button",
+			"qbutton",
+			"id='button",
+			"button",
+			"show",
+			"toggle",
+			"hiddenInfo",
+			"class='button expand postfix",
+			"hiddenInfo",
+			"<a href='#' class='button expand postfix",
+			"style",
+			"css",
+			"<h3>Double Check everything for us...</h3>",
+			"	<a class='button expand",
+			"<a class='button expand",
+			"<a",
+			"<div class='row' style='display:none;'>",
+			"postfix",
+			"<a class='button expand postfix success'>",
+			"<a class='button expand postfix alert'>",
+			"<a class='button expand postfix alert'>Approved</a>",
+			"id='hiddenInfo'",
+			"id",
+			"\n",
+			"hidden",
+			"!-- start of the hidden information -->",
+			"f",
+			"collapse",
+			"com",
+			"span",
+			"table",
+			"Completed",
+			"Waiting",
+			"Appointment",
+			"Time",
+			"Address",
+			"Car",
+			"Name",
+			"Status",
+			">\n",
+			"AZGCO",
+			"h1",
+			"time",
+			"r",
+			"def makeNewAppointment():",
+			"appointmentTime",
+			"=",
+			"]'",
+			"request",
+			"=''/>\n",
+			"appointmentTime",
+			"&",
+			"progress",
+			"meter",
+			"</",
+			"PHone",
+			":",
+			"h5",
+			"dt",
+			"static",
+			"showdb",
+			"request",
+			"<span",
+			"self",
+			"dbMake",
+			"self",
+			"href=\"#\"",
+			"href",
+			"<a href=\"#\"",
+			"</div>",
+			"afternoon",
+			"year",
+			"model",
+			"getQuote",
+			"span",
+			"350px",
+			"next",
+			"#",
+			"height",
+			"</label>",
+			"appointmentTime",
+			"method",
+			"Location",
+			"<input type='text'/>",
+			"li",
+			"michael",
+			"text",
+			"index",
 			"being",
 			" \\n /n",
 			"\\n /n",
@@ -455,112 +636,7 @@
 			"')",
 			"\")",
 			"trans",
-			"\")",
-			"a",
-			"\"",
-			"address",
-			"email",
-			"h",
-			":",
-			"findOne",
-			"findById",
-			"workouts",
-			"td",
-			"inputField",
-			"|",
-			"-",
-			"\n----",
-			"--",
-			"----",
-			"---",
-			"--",
-			"//-------------------------------",
-			"C",
-			"A",
-			"C",
-			"A",
-			"linePoints",
-			"group",
-			"drawingHOlder",
-			"addEventListener",
-			"swatchHolder",
-			"lineThicknessHolder",
-			"swatchPanel",
-			"swatchPanelTab",
-			"lineThicknessPanel",
-			"lineThicknessTab",
-			"40",
-			"335",
-			"200",
-			"onswatch",
-			"newRect",
-			"300",
-			"-300",
-			"text2",
-			"email",
-			"0",
-			"20",
-			"0",
-			"5",
-			"0",
-			"newRect",
-			"r",
-			"btnBlack",
-			"w",
-			"400",
-			"100",
-			"200",
-			"swatchHolder",
-			"local",
-			"lineTHicknessTab",
-			"50",
-			"100",
-			"255",
-			"linetable",
-			"onSwatch_TAP",
-			"tap",
-			"touch",
-			"display.newGroup",
-			"group",
-			"275",
-			"btnRed",
-			"6",
-			"10",
-			"touch",
-			"200",
-			"tap",
-			"touch",
-			"tap",
-			"square2",
-			"square",
-			"groupuy",
-			"verticalEmotion",
-			"horizontalEmotion",
-			"items",
-			"200",
-			"100",
-			"20",
-			"5",
-			"v",
-			"i",
-			"arr",
-			"y1",
-			"y0",
-			"y2",
-			"x1",
-			"x0",
-			"inches",
-			"st",
-			"Length",
-			"length",
-			"Diameter",
-			"diameter",
-			"pattern",
-			"sample",
-			"text",
-			"span",
-			"animate",
-			"Searching"
+			"\")"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -579,28 +655,137 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "hello.py",
+					"file": "static/js/main.js",
 					"settings":
 					{
-						"buffer_size": 1387,
+						"buffer_size": 2460,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								2320,
+								2320
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 523.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "templates/admin.html",
+					"settings":
+					{
+						"buffer_size": 7216,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7216,
+								7216
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jinja2/Syntaxes/HTML (Jinja Templates).tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3969.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "hello.py",
+					"settings":
+					{
+						"buffer_size": 4259,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2587,
+								2591
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1299.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "templates/jobs.html",
+					"settings":
+					{
+						"buffer_size": 2491,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								71,
+								71
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jinja2/Syntaxes/HTML (Jinja Templates).tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "templates/layout.html",
+					"settings":
+					{
+						"buffer_size": 1075,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								994,
+								994
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -654,16 +839,44 @@
 		"selected_items":
 		[
 			[
-				"main",
-				"static/js/main.js"
+				"css",
+				"static/css/foundation.css"
+			],
+			[
+				"lay",
+				"templates/layout.html"
+			],
+			[
+				"inde",
+				"templates/index.html"
+			],
+			[
+				"slider",
+				"static/css/slider.css"
+			],
+			[
+				"chosen",
+				"static/chosen/chosen.js"
+			],
+			[
+				".css",
+				"static/css/index.css"
+			],
+			[
+				"hell",
+				"hello.py"
 			],
 			[
 				"hello",
 				"templates/hello.html"
 			],
 			[
-				"inde",
-				"views/index.jade"
+				"mai",
+				"static/js/main.js"
+			],
+			[
+				"main",
+				"static/js/main.js"
 			],
 			[
 				"index",
@@ -690,11 +903,11 @@
 		"selected_items":
 		[
 			[
-				"re",
-				"/Users/Hermes/development/workout-tracker/rest.sublime-project"
+				"",
+				"/Users/Hermes/fingerSquared/firmata/dc_motor.sublime-project"
 			],
 			[
-				"",
+				"re",
 				"/Users/Hermes/development/workout-tracker/rest.sublime-project"
 			],
 			[
