@@ -32,6 +32,9 @@ ul li {
 ul li input[type="text"], ul li input[type="password"] {
 	width:200px;
 }
+select{
+	width: 200px;
+}
 
 /* Headers */
 h1 {
@@ -48,6 +51,15 @@ h2 {
 	padding:0;
 	width:200px;
 	color:#fff;
+}
+.next-slide{
+	padding: 10px 15px;
+}
+.next-slide a{
+	position: relative;
+    padding: 10px 15px;
+    background: #4479BA;
+    color: #FFF;
 }
 
 /* Containers */
@@ -143,4 +155,10 @@ footer {
 /* Misc */
 .clear {
 	clear:both;
+}
+
+input.parsley-error, textarea.parsley-error {
+color: #B94A48 !important;
+background-color: #F2DEDE !important;
+border: 1px solid #EED3D7 !important;
 }
