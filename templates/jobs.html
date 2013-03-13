@@ -2,26 +2,26 @@
 {% block content %}
 {% for post in posts %}
 <div class='row'>
-	<div class='twelve columns'>
+	<div class='large-12 columns'>
 		<div class='row'>
-			<div class='six columns centered'>
+			<div class='large-6 columns large-centered'>
 				<!-- start of the display row -->
 				<div class='row collapse'>
-					<div class='nine columns'>
+					<div class='large-9 columns'>
 						<span class='prefix'>{{post.name}} | {{post.location}}</span>
 					</div>
-					<div class='three columns'>
-						<a href='#' id='{{loop.index}}' class='button expand postfix buttonHiddenInfo {{post.status}}'>{{post.status}}</a>
+					<div class='large-3 columns'>
+						<a href='#' id='{{loop.index}}' class='button prefix buttonHiddenInfo {{post.status}}'>{{post.status}}</a>
 					</div>
 				</div>
 			</div>
 			<!-- start of the hidden information -->
 			<div class='row hiddenInfo' id='{{loop.index}}info' style='display:none;'>
-				<div class='twelve columns'>
+				<div class='large-12 columns'>
 					<div class='panel'>
 						<div class='row'>
-							<div class='six columns'>
-								<table class='twelve'>
+							<div class='large-6 columns'>
+								<table class='large-12'>
 									<tr>
 										<td>Quote:</td>
 										<td>${{post.quote}}</td>
@@ -36,7 +36,7 @@
 									</tr>
 								</table>
 								<a>
-									<table class='twelve'>
+									<table class='large-12'>
 										<tr>
 											<td>Service Type:</td>
 											<td>{{post.serviceType}}</td>
@@ -48,9 +48,9 @@
 									</table>
 								</a>
 							</div>
-							<div class='six columns'>
+							<div class='large-6 columns'>
 								<a>
-									<table class='twelve'>
+									<table class='large-12'>
 										<tr>
 											<td>Name:</td>
 											<td>{{post.name}}</td>
@@ -66,7 +66,7 @@
 									</table>
 								</a>
 								<a>
-									<table class='twelve'>
+									<table class='large-12'>
 										<tr>
 											<td>Method of Contact:</td>
 											<td>{{post.contactMethod}}</td>
@@ -80,7 +80,7 @@
 							</div>
 						</div>
 						<div class='row'>
-							<div class='eight columns centered text-center'>
+							<div class='eight columns large-centered text-center'>
 								<a href='jobs/Scheduled/{{post._id}}' class='button'>Schedule</a>
 								<a href='jobs/Completed/{{post._id}}' class='button'>Completed</a>
 								<a href='jobs/Pending/{{post._id}}' class='button'>Pending</a>

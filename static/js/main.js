@@ -30,13 +30,13 @@ $(document).ready(function(){
 	});
 //==============================================================
 	$('#btnQuote').on('click', function(){
-
 		if($('#year').val() != ''){
 			if(scheduleAppointmentAvailable == false){
 				var randQuote = Math.floor(Math.random() * (800 - 200 + 1)) + 200;
 				$('#quoteDisplay').html(randQuote+'.00');
 				$('#quoteHidden').val(randQuote+'.00');
 				scheduleAppointmentAvailable = true;
+				$("#scheduleAppointment").removeClass('secondary').addClass('success');
 			}
 		}
 	});
@@ -69,5 +69,6 @@ $(document).ready(function(){
 			currentOpenField = $(this).attr('id');
 			$("#"+currentOpenField+"info").slideToggle();
 		});
+
 	
 });

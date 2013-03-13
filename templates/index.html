@@ -1,6 +1,6 @@
 {% extends 'layout.html' %}
 {% block content %}
-	<form method='POST' action='/scheduleAppointment'>
+	<form method='POST' action='/scheduleAppointment' data-validate="parsley">
 
 <!--
 =================================================================
@@ -8,7 +8,7 @@
 =================================================================
 -->
 <div class='row'>
-	<div class='eight columns'>
+	<div class='large-8 columns'>
 		<fieldset>
 			<legend>Get a Quote</legend>
 <!--
@@ -17,32 +17,32 @@
 ===============================================
 -->
 <div class='row'>
-	<div class='twelve columns'>
+	<div class='large-12 columns'>
 		<div class='panel radius'>
 			<div class='row'>
-				<div class='twelve columns'>
+				<div class='large-12 columns'>
 					<label><h4>Car Make</h4></label>
-					<select name='make' id='make' class='twelve'>
+					<select name='make' id='make' class='large-12'>
 						<option>Select Make</option>
 					</select>
 				</div>
 			</div>
 			<div class='row'>
-				<div class='twelve columns'>
+				<div class='large-12 columns'>
 					<label><h4>Car Model</h4></label>
-					<select name='model' id='model' class='twelve'>
+					<select name='model' id='model' class='large-12'>
 						<option>Select Model</option>
 					</select>
 				</div>
-				<div class='twelve columns'>
+				<div class='large-12 columns'>
 					<label><h4>Year</h4></label>
-					<input type='text' name='year' id='year' class='twelve' placeholder='Year'/>
+					<input type='text' name='year' id='year' class='large-12' placeholder='Year' data-type="digits" data-range="[1950, 2015]" data-trigger="focusin focusout"/>
 				</div>
 			</div>
 		</div>
 		<div class='row'>
-			<div class='eight columns'>
-				<a class='large button right' id='btnQuote'>See Your Quote</a>
+			<div class='large-12 columns text-center'>
+				<a class='large button' id='btnQuote'>See Your Quote</a>
 			</div>
 		</div>
 	</div>
@@ -54,24 +54,24 @@
 		BODY RIGHT
 ===============================================
 -->
-<div class='four columns'>
+<div class='large-4 columns'>
 	<br/>
 	<br/>
 	<br/>
 	<div class='row'>
-		<div class='twelve columns text-center'>
+		<div class='large-12 columns text-center'>
 			<div class='panel radius'>
 				<div class='row'>
-					<div class='twelve columns'>
+					<div class='large-12 columns'>
 						<h3>This is where you quote could be!</h3>
 					</div>
-					<div class='twelve columns'>
+					<div class='large-12 columns'>
 						<h4>$<span id='quoteDisplay'><code>HERE</code></span></h4>
 						<input type='hidden' name='quote' id='quoteHidden'/>
 					</div>
-					<div class='twelve columns'>
+					<div class='large-12 columns'>
 						<br>
-						<a href="#" data-reveal-id="warningModal" id='scheduleAppointment' class="large button">Schedule</a>
+						<a href="#" data-reveal-id="warningModal" id='scheduleAppointment' class="large secondary button">Schedule</a>
 					</div>
 				</div>
 			</div>
@@ -87,18 +87,18 @@
 -->
 <div id='warningModal' class='reveal-modal' data-closeOnBackgroundClick='false'>
 	<div class='row'>
-		<div class='twelve columns centered'>
+		<div class='large-12 columns large-centered'>
 			<h2>We need...</h2>
 			<p>Some more information about you if that's alright.</p>
 			<div class='row'>
-				<div class='twelve columns'>
-					<a href='#' class='button secondary close-reveal-modal'>No Thanks</a>
+				<div class='large-6 columns'>
+					<a href='#' class='close-modal button secondary'>No Thanks</a>
 					<a href='#' class='button success' data-reveal-id='initInfo'>Awesome Let's Go</a>
 				</div>
 			</div>
 		</div>
 	</div>
-	<a href='#' class='close-reveal-modal'>x</a>
+	<a href='#' class='close-reveal-modal close-modal'>x</a>
 </div>
 <!--
 =================================================================
@@ -109,15 +109,15 @@
 			<label><h3>Full Name</h3></label>
 			<input type='text' name='name' placeholder='Firstname Lastname'/>
 			<label><h3>Email</h3></label>
-			<input type='text' name='email' placeholder='Email' />
+			<input type='text' name='email' placeholder='Email' data-type="email" data-trigger="focusin focusout" />
 			<label><h3>Phone</h3></label>
 			<input type='text' name='phone' placeholder='(480)-555-1234' />
 		</div>
-		<a href='#' class='button secondary close-reveal-modal'>No Thanks</a>
+		<a href='#' class='button secondary close-modal'>No Thanks</a>
 		<a href='#' class='button success' data-reveal-id='serviceInfo'>Awesome Let's Go</a>
 	</div>
-	<a class="close-reveal-modal">×</a>
-	<div class="secondary progress twelve"><span style='width: 25%' class="meter"></span></div>
+	<a class="close-reveal-modal close-modal">×</a>
+	<div class="secondary progress large-12"><span style='width: 25%' class="meter"></span></div>
 </div>
 <!--
 =================================================================
@@ -127,12 +127,12 @@
 		<div class='panel'>
 			<h3>Service Type</h3>
 			<label for='inshop'>
-				<input type='radio' name='serviceType' id='inshop' value='inshop'/>
-				In Shop
+				<input type='radio' name='serviceType' id='inshop' value='businessLocation'/>
+				Business
 			</label>
 			<label for='mobileLocation'>
-				<input type='radio' name='serviceType' id='mobileLocation' value='mobileLocation'/>
-				Mobile
+				<input type='radio' name='serviceType' id='mobileLocation' value='homeLocation'/>
+				Home
 			</label>
 			<hr/>
 			<label><h4>Where?</h4></label>
@@ -141,8 +141,8 @@
 		<a href='#' class='button secondary' data-reveal-id='initInfo'>back</a>
 		<a href='#' class='button success' data-reveal-id='finalInfo'>Continue</a>
 	</div>
-	<a href='#' class='close-reveal-modal'>x</a>
-	<div class="secondary progress twelve"><span style='width: 50%' class="meter"></span></div>
+	<a href='#' class='close-reveal-modal close-modal'>x</a>
+	<div class="secondary progress large-12"><span style='width: 50%' class="meter"></span></div>
 </div>
 <!--
 =================================================================
@@ -159,6 +159,7 @@
 				<input type='radio' name='contactMethod' id='emailContact' value='emailContact'/>
 				by Email
 			</label>
+			<hr>
 			<h3>Time of Appointment</h3>
 			<label for='morning'>
 				<input type='radio' name='appointmentTime' id='morning' value='morning'/>
@@ -172,19 +173,19 @@
 		<a href='#' class='button secondary' data-reveal-id='serviceInfo'>back</a>
 		<a href='#' class='button success' data-reveal-id='finalCheckInfo' id='finalCheck'>Continue</a>
 	</div>
-	<a href='#' class='close-reveal-modal'>x</a>
-	<div class="secondary progress twelve"><span style='width: 75%' class="meter"></span></div>
+	<a href='#' class='close-reveal-modal close-modal'>x</a>
+	<div class="secondary progress large-12"><span style='width: 75%' class="meter"></span></div>
 </div>
 <!--
 =================================================================
 -->
 <div id='finalCheckInfo' class='reveal-modal large'>
 	<div class='row'>
-		<div class='twelve columns'>
+		<div class='large-12 columns'>
 			<div class='panel'>
 				<div class='row'>
-					<div class='six columns'>
-						<table class='twelve'>
+					<div class='large-6 columns'>
+						<table class='large-12'>
 							<tr>
 								<td>Make:</td>
 								<td id='dbCheckMake'>Honda</td>
@@ -200,7 +201,7 @@
 						</table>
 						<hr/>
 						<a data-reveal-id='serviceInfo'>
-							<table class='twelve'>
+							<table class='large-12'>
 								<tr>
 									<td>Service Type:</td>
 									<td id='dbCheckServiceType'>Mobile</td>
@@ -212,9 +213,9 @@
 							</table>
 						</a>
 					</div>
-					<div class='six columns'>
+					<div class='large-6 columns'>
 						<a data-reveal-id='initInfo'>
-							<table class='twelve'>
+							<table class='large-12'>
 								<tr>
 									<td>Name:</td>
 									<td id='dbCheckName'>Michael Jeffrey</td>
@@ -231,7 +232,7 @@
 						</a>
 						<hr/>
 						<a data-reveal-id='finalInfo'>
-							<table class='twelve'>
+							<table class='large-12'>
 								<tr>
 									<td>Method of Contact:</td>
 									<td id='dbCheckContactMethod'>Phone</td>
@@ -248,8 +249,9 @@
 		</div>
 	</div>
 	<div class='row'>
-		<div class='twelve columns text-center'>
-			<input type='submit' class='button success large' value='submit'/>
+		<div class='large-12 columns text-center'>
+			<a href='#' class='button secondary close-modal'>No Thanks</a>
+			<input type='submit' class='button success' value='submit'/>
 		</div>
 	</div>
 </div>

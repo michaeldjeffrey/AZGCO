@@ -16,25 +16,6 @@ app.secret_key = 'some_secret'
 
 carsAmount = db.cars.count()
 
-@app.route("/test")
-def test():
-	post = {
-		'name': '',
-		'town': '',
-		'status': '',
-		'make': '',
-		'model': '',
-		'year': '',
-		'serviceType': '',
-		'location': '',
-		'': '',
-		'': '',
-		'': '',
-		'': '',
-	}
-
-	return render_template('jobs.html', posts = post)
-
 @app.route("/")
 def index():
 	return render_template('index.html', carsAmount=carsAmount)
@@ -102,7 +83,7 @@ def admin():
 
 @app.route("/jobs")
 def jobs():
-	return render_template('jobs.html', posts = db.cars.find())
+	return render_template('jobs.html', posts = db.cars.find().sort("status", -1))
 
 @app.route("/jobs/<string:state>/<string:objid>")
 def job_action(state, objid):

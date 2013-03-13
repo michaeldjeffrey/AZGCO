@@ -4,15 +4,17 @@
 	<title>AZGCO</title>
 	<meta charset="UTF-8">
 	<meta name="language" content="english" />
+	<link rel="stylesheet" type="text/css" href="/static/css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="/static/css/foundation.css">
 	<link rel="stylesheet" type="text/css" href="/static/css/app.css">
 	<link rel="stylesheet" type="text/css" href="/static/chosen/chosen.css">
-	<script type="text/javascript" src='/static/js/jquery.js'></script>
-	<script type="text/javascript" src='/static/js/modernizr.foundation.js'></script>
+	<script type="text/javascript" src='/static/js/vendor/jquery.js'></script>
+	<script type="text/javascript" src='/static/js/vendor/custom.modernizr.js'></script>
 	<script type="text/javascript" src='/static/js/foundation.min.js'></script>
-	<script type="text/javascript" src='/static/js/app.js'></script>
+	<script type="text/javascript" src='/static/js/foundation/foundation.reveal.js'></script>
 	<script type="text/javascript" src='/static/chosen/chosen.js'></script>
 	<script type="text/javascript" src='/static/js/main.js'></script>
+	<script type="text/javascript" src='/static/parsley/parsley.js'></script>
 </head>
 <body>
 	<!--
@@ -21,12 +23,15 @@
 =================================================================
 -->
 <div class='row'>
-	<div class='twelve columns'>
+	<div class='large-12 columns'>
 		<h1><span class='subheader'>Welcome to</span> AZGCO</h1>
 	</div>
 	<hr/>
 </div>
 	{% block content %}
 	{% endblock %}
+	  <script>
+    $(document).foundation();
+  </script>
 </body>
 </html>
