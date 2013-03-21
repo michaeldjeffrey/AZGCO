@@ -11,7 +11,7 @@
 						<span class='prefix'>{{post.name}} | {{post.location}}</span>
 					</div>
 					<div class='large-3 columns'>
-						<a href='#' id='{{loop.index}}' class='button prefix buttonHiddenInfo {{post.status}}'>{{post.status}}</a>
+						<a id='{{loop.index}}' class='button prefix buttonHiddenInfo {{post.status}}'>{{post.status}}</a>
 					</div>
 				</div>
 			</div>
@@ -81,9 +81,10 @@
 						</div>
 						<div class='row'>
 							<div class='eight columns large-centered text-center'>
-								<a href='jobs/Scheduled/{{post._id}}' class='button'>Schedule</a>
-								<a href='jobs/Completed/{{post._id}}' class='button'>Completed</a>
-								<a href='jobs/Pending/{{post._id}}' class='button'>Pending</a>
+								<a href='jobs/Scheduled/{{post._id}}' class='button Scheduled'>Schedule</a>
+								<a href='jobs/Completed/{{post._id}}' class='button Completed'>Completed</a>
+								<a href='jobs/Pending/{{post._id}}' class='button'>Delayed</a>
+								<a href='jobs/delete/{{post._id}}' class='button alert'>Delete</a>
 							</div>
 						</div>
 					</div>
