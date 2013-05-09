@@ -34,11 +34,7 @@ def makeNewAppointment():
 			'location'        : request.form['location'],
 			'contactMethod'   : request.form['contactMethod'],
 			'appointmentTime' : request.form['appointmentTime'],
-<<<<<<< HEAD
-			'status' 					: 'Success',
-=======
 			'status' 					: 'Pending',
->>>>>>> hotfix/status_change
 			'timeSubmitted'   : {
 				'date': datetime.now().strftime('%Y-%m-%d'),
 				'time': datetime.now().strftime("%H:%M:%S")
