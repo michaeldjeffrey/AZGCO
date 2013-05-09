@@ -6,9 +6,7 @@ $(document).ready(function(){
 
 	$.getJSON('/static/json/cars.json', function(data){
 		for(var i = 0; i < data.length; i++){
-			$('#make').append('<option data-number='+i+
-				' value='+data[i].title+
-				'>'+data[i].title+'</option>').trigger('liszt:updated');
+			$('#make').append('<option data-number='+i+' value='+data[i].title+'>'+data[i].title+'</option>').trigger('liszt:updated');
 		}
 	});
 //==============================================================
@@ -69,6 +67,4 @@ $(document).ready(function(){
 			currentOpenField = $(this).attr('id');
 			$("#"+currentOpenField+"info").slideToggle();
 		});
-
-	
 });
