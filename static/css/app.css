@@ -1,23 +1,4 @@
-/* Artfully masterminded by ZURB  */
-
-/* -------------------------------------------------- 
-   Table of Contents
------------------------------------------------------
-:: Shared Styles
-:: Page Name 1
-:: Page Name 2
-*/
-.Pending { background-color: #c60f13; }
-.Completed { background-color: #5da423; }
-.Scheduled { background-color: #e9e9e9; color: #505050; border: 1px solid #909090;}
-.Completed:hover, .Completed:focus { background-color: #457a1a; }
-.Pending:hover, .Pending:focus { background-color: #970b0e; }
-.Scheduled:hover, .Scheduled:focus { background-color: #d0d0d0; color: #303030; }
-
-/* -----------------------------------------
-   Shared Styles
------------------------------------------ */
-
+/* styling for parsley on index page */
 input.parsley-success, textarea.parsley-success {
   color: #468847 !important;
   background-color: #DFF0D8 !important;
@@ -37,18 +18,23 @@ ul.parsley-error-list li {
     line-height: 11px;
 }
 
-    
+/* styling for buttons on admin page */
+.Pending { background-color: #c60f13; }
+.Completed { background-color: #5da423; }
+.Scheduled { background-color: #e9e9e9; color: #505050; border: 1px solid #909090;}
+.Completed:hover, .Completed:focus { background-color: #457a1a; }
+.Pending:hover, .Pending:focus { background-color: #970b0e; }
+.Scheduled:hover, .Scheduled:focus { background-color: #d0d0d0; color: #303030; }
 
-
-/* -----------------------------------------
-   Page Name 1
------------------------------------------ */
-
-
-
-
-/* -----------------------------------------
-   Page Name 2
------------------------------------------ */
-
-
+/* styling for home and admin buttons in layout file */
+ul{
+	list-style: none;
+	display: inline;
+}
+ul li a{
+	padding: 10px;
+}
+ul li a:hover{
+	text-decoration: underline;
+	background: #fafafa;
+}
